@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>EpsilonJS Calculator</title>
+	<link type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />
+	<link type="text/css" href="../src/css/calculator.css" rel="stylesheet" />
+	
+	<script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="../bower_components/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../bower_components/epsilonjs/src/epsilon.js"></script>
+	<script type="text/javascript" src="../src/calculator.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#calculator").calculator();
+			
+			epsilon();
+		});
+	</script>
+	
+	<style type="text/css">
+		.calc-window {
+			width: 250px;
+		}
+		
+		.sample-sheet {
+			width: 100%;
+		}
+		.sample-sheet td {
+			text-align: right;
+			border: 1px solid #DDCCDD;
+		}
+		
+		.sample-sheet tr td:first-child {
+			width: 20px;
+			text-align center;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="calculator" class="calc-window"></div>
+</body>
+	
+</html>

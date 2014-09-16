@@ -1,0 +1,24 @@
+{
+  "name": "CalculatorJS",
+  "title": "CalculatorJS",
+  "description": "Calculator library for basic and complex expressions including DOM reference members.",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kdinev/EpsilonJS.git"
+  },
+  "engine": "node >= 0.10.5",
+  "keywords": [
+    "calculator",
+    "expression",
+    "parser"
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-qunit": "~0.4.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-cssmin": "~0.9.0"
+  }
+}

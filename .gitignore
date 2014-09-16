@@ -34,3 +34,13 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+#dev-resourse
+src/test.html
+
+#packages
+node_modules/
+bower_components/
+
+#buildzone
+build/
