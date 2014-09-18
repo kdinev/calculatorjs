@@ -19,7 +19,7 @@
 		},
 		_parser: null,
 		_create: function() {
-			this._parser = new ExpressionParser();
+			this._parser = new Epsilon.ExpressionParser();
 			this._render();
 			this._attachEvents();
 			this.element.addClass(this._css.calculator);
