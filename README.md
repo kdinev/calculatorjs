@@ -1,4 +1,4 @@
-CalculatorJS
+CalculatorJS [![Codacy Badge](https://www.codacy.com/project/badge/20f7e3388f3b49ca8d72a04af2efa622)](https://www.codacy.com/public/kdinev/calculatorjs)
 =========
 
 A JavaScript calculator and an expression parser.
