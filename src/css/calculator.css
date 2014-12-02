@@ -25,8 +25,9 @@
 	-webkit-user-select: none; /* Chrome/Safari */        
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+ */
-	-webkit-transition: border-color 0.2s;
-	-moz-transition: border-color 0.2s;
+	-webkit-transition: border-color 0.2s; /* Chrome/Safari */    
+	-moz-transition: border-color 0.2s; /* Firefox */
+	-ms-transition: border-color 0.2s; /* IE10+ */
 	transition: border-color 0.2s;
 }
 
