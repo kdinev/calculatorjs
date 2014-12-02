@@ -28,6 +28,7 @@
 	-webkit-transition: border-color 0.2s; /* Chrome/Safari */    
 	-moz-transition: border-color 0.2s; /* Firefox */
 	-ms-transition: border-color 0.2s; /* IE10+ */
+	-o-transition: border-color 0.2s; /* Opera */
 	transition: border-color 0.2s;
 }
 
