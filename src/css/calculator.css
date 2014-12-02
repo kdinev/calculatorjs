@@ -5,6 +5,7 @@
 }
 
 .ui-calculator  {
+	box-sizing: border-box;
 	border: 1px solid #DDCCDD;
 	height: 100%;
 }
@@ -14,6 +15,7 @@
 }
 
 .ui-calculator td {
+	box-sizing: border-box;
 	text-align: center;
 	color: #606060;
 	width: 80px;
@@ -24,6 +26,7 @@
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+ */
 	-webkit-transition: border-color 0.2s;
+	-moz-transition: border-color 0.2s;
 	transition: border-color 0.2s;
 }
 

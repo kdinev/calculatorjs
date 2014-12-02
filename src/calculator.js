@@ -38,20 +38,19 @@
 			this.element.html(html);
 		},
 		_attachEvents: function () {
-			var input = this.element.find('.' + this._css.displayValue),
+			var input = this.element.find("." + this._css.displayValue),
 				self = this;
 			this.element.on("click", "tbody td", function () {
 				var target = $(this),
-					value = target.text(),
-					val = input.text();
+					value = target.text();
 				switch (value) {
-				case '=':
+				case "=":
 					self._evaluate();
 					break;
-				case 'C':
+				case "C":
 					input.text(0);
 					break;
-				case 'Del':
+				case "Del":
 					self._delete();
 					break;
 				default:
@@ -111,7 +110,7 @@
 				this._evaluate();
 				break;
 			case 46:
-				this.element.find('.' + this._css.displayValue).text(0);
+				this.element.find("." + this._css.displayValue).text(0);
 				break;
 			default:
 				this._input(character);
@@ -119,7 +118,7 @@
 			}
 		},
 		_evaluate: function () {
-			var input = this.element.find('.' + this._css.displayValue),
+			var input = this.element.find("." + this._css.displayValue),
 				value = input.text(),
 				result;
 			this._clear = true;
@@ -135,18 +134,18 @@
 			input.text(result);
 		},
 		_delete: function () {
-			var input = this.element.find('.' + this._css.displayValue),
+			var input = this.element.find("." + this._css.displayValue),
 				val = input.text();
 			if (val.length === 1) {
-				val = '0';
+				val = "0";
 				input.text(0);
 			}
-			if (val !== '0') {
+			if (val !== "0") {
 				input.text(val.substring(0, val.length - 1));
 			}
 		},
 		_input: function (value) {
-			var input = this.element.find('.' + this._css.displayValue),
+			var input = this.element.find("." + this._css.displayValue),
 				val = input.text();
 			switch (value) {
 			case "+":

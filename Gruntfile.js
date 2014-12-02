@@ -1,21 +1,21 @@
 module.exports = function(grunt) {
 	// Project configuration.
 	grunt.initConfig({
-		pkg: grunt.file.readJSON('package.json'),
+		pkg: grunt.file.readJSON("package.json"),
 		uglify: {
 			options: {
-				banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+				banner: "/*! <%= pkg.name %> <%= grunt.template.today('yyyy-mm-dd') %> */\n"
 			},
 			build: {
 				files: {
-					'build/calculator.min.js': ['src/calculator.js']
+					"build/calculator.min.js": ["src/calculator.js"]
 				}
 			}
 		},
 		cssmin: {
 			combine: {
 				files: {
-					'build/css/calculator.min.css': ['src/css/calculator.css']
+					"build/css/calculator.min.css": ["src/css/calculator.css"]
 				}
 			}
 		},
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
 			]
 		},
 		qunit: {
-			all: ['test/*.html']
+			all: ["test/*.html"]
 		},
 		watch: {
 			files: ["**/*.js"],
@@ -50,7 +50,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks("grunt-contrib-cssmin");
 
 	// Default task(s).
-	grunt.registerTask('default', ['jshint', 'uglify', 'cssmin']);
+	grunt.registerTask("default", ["jshint", "uglify", "cssmin"]);
 	
 	// Custom task{s}.
 	grunt.registerTask("test", ["jshint"]);
