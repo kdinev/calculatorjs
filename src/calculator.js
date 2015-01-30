@@ -21,10 +21,12 @@
 		_create: function() {
 			this._parser = new Epsilon.ExpressionParser();
 			this._render();
+			this._options = {};
+			this._options.display = this.element.find("." + this._css.displayValue);
 			this._attachEvents();
 			this.element.addClass(this._css.calculator);
 			if (this.options.focused) {
-				this.element.find("." + this._css.displayValue).focus();
+				this._options.display.focus();
 			}
 		},
 		_render: function () {
@@ -38,7 +40,7 @@
 			this.element.html(html);
 		},
 		_attachEvents: function () {
-			var input = this.element.find("." + this._css.displayValue),
+			var input = this._options.display,
 				self = this;
 			this.element.on("click", "tbody td", function () {
 				var target = $(this),
@@ -110,7 +112,7 @@
 				this._evaluate();
 				break;
 			case 46:
-				this.element.find("." + this._css.displayValue).text(0);
+				this._options.display.text(0);
 				break;
 			default:
 				this._input(character);
@@ -118,7 +120,7 @@
 			}
 		},
 		_evaluate: function () {
-			var input = this.element.find("." + this._css.displayValue),
+			var input = this._options.display,
 				value = input.text(),
 				result;
 			this._clear = true;
@@ -134,7 +136,7 @@
 			input.text(result);
 		},
 		_delete: function () {
-			var input = this.element.find("." + this._css.displayValue),
+			var input = this._options.display,
 				val = input.text();
 			if (val.length === 1) {
 				val = "0";
@@ -145,7 +147,7 @@
 			}
 		},
 		_input: function (value) {
-			var input = this.element.find("." + this._css.displayValue),
+			var input = this._options.display,
 				val = input.text();
 			switch (value) {
 			case "+":
