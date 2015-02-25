@@ -15,8 +15,11 @@
     "**/.*",
     "node_modules",
     "bower_components",
+	"demos",
     "test",
-    "tests"
+    "tests",
+	"package.json",
+	"Gruntfile.js"
   ],
   "dependencies": {
     "epsilonjs": "*",
