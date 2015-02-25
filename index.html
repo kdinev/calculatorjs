@@ -7,7 +7,24 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+	<link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/themes/ui-lightness/jquery-ui.css">
+	<link rel="stylesheet" href="bower_components/calculatorjs/build/css/calculator.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="bower_components/epsilonjs/build/epsilon.min.js"></script>
+	<script type="text/javascript" src="bower_components/calculatorjs/build/calculator.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#calculator").calculator();
+		});
+	</script>
+	<style>
+		.ui-calculator table {
+			margin: 0;
+		}
+	</style>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -41,6 +58,8 @@
     });
 &lt;/script&gt;
 </code></pre>
+
+<div id="calculator"></div>
 
 <p>The calculator widget is used in a Windows 8.1 store application which you may download and play with here: <a href="http://apps.microsoft.com/windows/app/epsilon-calculator/ec41ebdd-00c6-4654-a2a2-b297a0118a87">http://apps.microsoft.com/windows/app/epsilon-calculator/ec41ebdd-00c6-4654-a2a2-b297a0118a87</a></p>
       </section>

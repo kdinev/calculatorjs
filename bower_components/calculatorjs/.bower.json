@@ -1,0 +1,35 @@
+{
+  "name": "CalculatorJS",
+  "homepage": "https://github.com/kdinev/calculatorjs",
+  "authors": [
+    "kdinev <kdinev@mail.bw.edu>"
+  ],
+  "description": "The CalculatorJS is a calculator widget provided dependent on the EpsilonJS expression parser. This widget was created to test the epsilon expression parser. The calculator widget is dependent on jQuery and jQuery UI.",
+  "main": "src/calculator.js",
+  "keywords": [
+    "calculator"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "epsilonjs": "*",
+    "jquery": "~2.1.1",
+    "jquery-ui": "~1.11.1"
+  },
+  "_release": "9a3ed6f063",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "9a3ed6f063ebca4e9bcc67ffd7dcffa14ab899f7"
+  },
+  "_source": "git://github.com/kdinev/calculatorjs.git",
+  "_target": "*",
+  "_originalSource": "calculatorjs",
+  "_direct": true
+}
